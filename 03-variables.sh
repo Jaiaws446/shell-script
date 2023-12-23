@@ -1,4 +1,4 @@
 #!/bin/bash
 
 Date=$(date)
-echo "date and time is: $Date"
+echo "script started executing: $Date"
