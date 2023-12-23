@@ -8,6 +8,8 @@ N="\e[0m"
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
+echo "script started executing at $TIMESTAMP" &>>$LOGFILE
+
 echo "script name: $0"
 
 VALIDATE(){
