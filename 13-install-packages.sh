@@ -5,8 +5,8 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-TIMESTAMP=$(DATE %F-%H-%M-%S)
-LOGFILE="/TMP/$0-$TIMESTAMP.log"
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script started executing at $TIMESTAMP" &>> $LOGFILE
 
