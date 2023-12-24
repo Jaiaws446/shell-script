@@ -35,7 +35,7 @@ for package in $@
 do
     yum list installed $package &>> $LOGFILE #check installaed or not
 
-    if {$? -ne 0} #if not installed
+    if [ $? -ne 0 ] #if not installed
     then 
         yum install $package -y &>> $LOGFILE #install the package
         VALIDATE $? "installation of $package" #validate
